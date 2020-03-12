@@ -31,7 +31,7 @@ class PostToTimelineTest extends TestCase
         $response->assertStatus(201)
     ->assertJson([
         'data' => [
-            'type' => 'post',
+            'type' => 'posts',
             'post_id' => $post->id,
             'attributes' => [
                 'posted_by' => [

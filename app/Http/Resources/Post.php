@@ -16,7 +16,7 @@ class Post extends JsonResource
     {
       return [
           'data' => [
-              'type' =>  'post',
+              'type' =>  'posts',
                'post_id' => $this->id,
                'attributes' => [
                    'posted_by' => new UserResource($this->user),
